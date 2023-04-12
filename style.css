@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+
+
+button {
+    border: none;
+}
+
+.button-div {
+    display: flex;
+    height: 72px;
+}
+
+.art {
+    display: none;
+}
+
+#black {
+    background-color: rgba(21, 21, 21, 1);
+    width: 204px;
+
+}
+
+.desktop-header {
+    display: none;
+}
+
+#hero {
+    width: 100%;
+}
+
+#grid-1 {
+    width: 100%;
+}
+
+h2 {
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Big Shoulders Display';
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 3.64px;
+}
+
+#orange {
+    width: 56px;
+    background-color: rgba(213, 150, 108, 1);
+
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.art-gallery {
+    gap: 32px;
+    padding: 32px 16px 0 16px;
+
+}
+
+
+
+h1 {
+    font-family: 'Big Shoulders Display';
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 55px;
+    white-space: pre-line;
+
+}
+
+.element {
+    font-family: 'outfit';
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    color: rgba(68, 68, 68, 1);
+
+
+}
+
+#right {
+    width: 8px;
+    height: 24px;
+}
+
+main {
+    padding: 120px 16px 0 16px;
+}
+
+.your-day {
+    gap: 21px;
+    margin-top: 25px;
+}
+
+
+h3 {
+    font-family: 'Big Shoulders Display';
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 45px;
+    white-space: pre-line;
+
+}
+
+#grid-2 {
+    width: 100%;
+    margin-top: 32px;
+}
+
+#grid-3 {
+    width: 100%;
+    margin-top: 16px;
+}
+
+.inspired {
+    height: 293px;
+    background-color: black;
+    gap: 24px;
+    padding: 48px 24px 0 24px;
+    margin-top: 16px;
+
+}
+
+h4 {
+    font-family: 'Big Shoulders Display';
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 45px;
+    white-space: pre-line;
+    color: white;
+
+}
+
+.white {
+    color: rgba(255, 255, 255, 1);
+
+}
+
+.social-icon {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+}
+
+.footer-p {
+    color: rgba(255, 255, 255, 1);
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.footer-div {
+    gap: 38px;
+    padding: 48px 32px 48px 32px;
+}
+
+footer {
+    background-color: rgba(21, 21, 21, 1);
+    margin-top: 120px;
+}
+
+#footer-image {
+    width: 110px;
+    height: 40px;
+}
+
+#grid-1-tablet {
+    display: none;
+}
+
+#grid-tablet-two {
+    display: none;
+}
+
+#grid-2-desktop {
+    display: none;
+}
+
+#grid-tablet-three {
+    display: none;
+}
+
+#grid-3-desktop {
+    display: none;
+}
+
+.text {
+    display: none;
+}
+
+#hero-tablet {
+    display: none;
+}
+
+@media screen and (min-width:768px) {
+
+    #hero {
+        display: none;
+    }
+
+    #grid-1 {
+        display: none;
+    }
+
+    #grid-2 {
+        display: none;
+    }
+
+    #grid-3 {
+        display: none;
+    }
+
+    #grid-1-desktop {
+        display: none;
+    }
+
+    #grid-1-tablet {
+        display: block;
+        grid-column: 2/ span 4;
+        width: 100%;
+    }
+
+    #grid-tablet-two {
+        grid-column: 1/ span 3;
+        display: grid;
+        grid-column-end: -4;
+        grid-column-start: -1;
+        grid-row: 2;
+        width: 58%;
+        height: 100%;
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+
+
+    #grid-tablet-three {
+        grid-column: 4/4;
+        display: grid;
+        grid-column-start: -1;
+        grid-column-end: -2;
+        grid-row: 2/3;
+        width: 100%;
+    }
+
+    #hero-tablet {
+        display: block;
+        width: 100%;
+    }
+
+    header {
+        grid-template-columns: 53.027472527472526% 6.593406593406594% 46.565934065934066%;
+        display: grid;
+        padding: 0 39px 0 0;
+        overflow: hidden;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 40.638606676342526% 17.126269956458636% 40.638606676342526%;
+        row-gap: 11px;
+        padding: 120px 39px 0 40px;
+        grid-template-rows: 36.339522546419104% 27.763042% 35.278514588859416%;
+    }
+
+    .your-day {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .images {
+        display: grid;
+        margin: 0;
+    }
+
+    .inspired {
+        grid-column: 4/4;
+        height: 100%;
+        grid-column-start: -2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        margin: 0;
+    }
+
+    .footer-div {
+        flex-direction: row;
+        gap: 64px;
+        padding: 56px 40px 56px 39px;
+
+
+    }
+
+
+
+    .social-icon {
+        margin-left: 68px;
+        height: 20px;
+    }
+
+    .art-gallery {
+        grid-column: 2/ span 3;
+        margin-left: -66px;
+        margin-top: 145px;
+        padding: 0;
+
+
+    }
+}
+
+@media screen and (min-width:1440px) {
+    #grid-1-tablet {
+        display: none;
+    }
+
+    #grid-tablet-two {
+        display: none;
+    }
+
+    #grid-tablet-three {
+        display: none;
+    }
+
+    #hero-tablet {
+        display: none;
+    }
+
+    #hero-desktop {
+        display: inline;
+        order: 2;
+        position: relative;
+        right: 63px;
+    }
+
+
+    #grid-1-desktop {
+        display: inline;
+    }
+
+    #grid-2-desktop {
+        display: inline;
+    }
+
+    #grid-3-desktop {
+        display: inline;
+    }
+
+    .black-space {
+
+        display: inline;
+        background: rgba(21, 21, 21, 1);
+        width: 450px;
+        order: 1;
+        position: absolute;
+        height: 800px;
+
+    }
+
+    header {
+        display: flex;
+    }
+
+    .art-gallery {
+        display: none;
+    }
+
+    .art {
+        display: flex;
+        flex-direction: column;
+        order: 3;
+    }
+
+    h5 {
+        display: inline;
+        font-family: 'Big Shoulders Display';
+        font-size: 96px;
+        line-height: 88px;
+        z-index: 1;
+        width: 514px;
+        height: 176px;
+        transform: translateX(200px);
+        margin-top: 169px;
+        color: #FFFFFF;
+        white-space: pre-line;
+        mix-blend-mode: exclusion;
+
+
+    }
+
+    .desktop-header {
+        display: flex;
+        width: 1275px;
+        height: 800px;
+
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        margin-top: 190px;
+        z-index: 1;
+        position: absolute;
+        margin-left: 925px;
+    }
+
+    #grid-1-desktop {
+        display: grid;
+        width: 100%;
+        grid-column: 2/ span 3;
+    }
+
+    #grid-2-desktop {
+        grid-column: 1/ span 3;
+        display: grid;
+        grid-column-end: -4;
+        grid-column-start: -1;
+        grid-row: 2;
+        width: 58%;
+        height: 100%;
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+
+
+    #grid-3-desktop {
+        grid-column: 4/4;
+        display: grid;
+        grid-column-start: -1;
+        grid-column-end: -2;
+        grid-row: 2/3;
+        width: 100%;
+    }
+
+    main {
+        padding: 180px 164px 0 165px;
+    }
+
+    .your-day {
+        padding: 0 125px 92px 0;
+        justify-content: center;
+    }
+
+    .inspired {
+        padding: 65px 61px 64px 48px;
+    }
+
+    h4 {
+        font-size: 60px;
+        line-height: 60px;
+    }
+
+    .element {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    h3 {
+        font-size: 60px;
+        line-height: 60px;
+        gap: 32px;
+    }
+
+    .footer-div {
+        gap: 140px;
+        padding: 80px 165px 80px 165px;
+    }
+
+    .footer-p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .social-icon {
+        margin-left: 179px;
+    }
+
+    .first {
+        padding: 0px 160px 40px 0;
+
+    }
+
+
+}
