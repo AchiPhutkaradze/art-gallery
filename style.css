@@ -169,6 +169,11 @@ footer {
 #grid-1-tablet {
     display: none;
 }
+#grid-1-desktop{
+    display: none;
+}
+
+
 
 #grid-tablet-two {
     display: none;
